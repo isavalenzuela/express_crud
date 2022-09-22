@@ -1,0 +1,16 @@
+import { Sequelize } from "sequelize";
+
+// create connection
+const db = new Sequelize(
+  'animals',
+  'postgres',
+  'postgres', {
+  host: 'localhost',
+  dialect: 'postgres',
+  port: 5432,
+  define: {
+    timestamps: false
+  }
+});
+
+export default db;
