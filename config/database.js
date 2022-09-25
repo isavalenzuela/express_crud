@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize";
 
 // create connection
 const db = new Sequelize(
-  'animals',
+  'postgres',
   'postgres',
   'postgres', {
   host: 'localhost',
